@@ -116,7 +116,7 @@ img
 
 We can clearly see the populous cities of (from west to east) Szczecin, Poznań, Wrocław, Gdańsk, Katowice, Łódź, Kraków and Warsaw.
 
-Now that we have visualized Poland let's look at things at a city level and show you how to transform such raster data into vector format and manipulate it easily with GeoPandas. For this, I access the administrative boundaries of Kraków in a geojson format [here](https://github.com/dchoruzy/poland-geojson/blob/master/cities/high-quality/krakow/krakow.geojson). This file contains the boroughs of Kraków, so first, we need to merge them into the city as a whole :
+Now that we have visualized Poland let's look at things at a city level and show you how to transform such raster data into vector format and manipulate it easily with GeoPandas. For this, I accessed the administrative boundaries of Kraków in a geojson format from [Dariusz Choruży](https://github.com/dchoruzy). [This file](https://github.com/dchoruzy/poland-geojson/blob/master/cities/high-quality/krakow/krakow.geojson) contains the boroughs of Kraków, so first, we need to merge them into the city as a whole :
 
 
 ```python
@@ -374,7 +374,7 @@ output_file = 'kraków_population_grid.geojson'
 gdf_krakow.to_file(output_file, driver='GeoJSON')
 ```
 
-I performed the same steps for Poznań.
+I performed the same steps for [Poznań](https://github.com/dchoruzy/poland-geojson/blob/master/cities/high-quality/poznan/poznan.geojson).
 
 We can make things look nice by creating a custom colormap from the color of 2022, Very Peri.
 
